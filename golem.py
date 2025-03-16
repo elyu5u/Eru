@@ -15,8 +15,8 @@ bot = telebot.TeleBot('7771021236:AAEBRZCPO3BzJgsXQtuzQGpUUVEkpaefRt8') #bot tok
 admin_id = ["7471974865"]     #admin id dalo
 
 # Group and channel details
-GROUP_ID = "-1002224465890"            #group id dalo
-CHANNEL_USERNAME = "@LOLOLOLOLOLOL89"         #channel username 
+GROUP_ID = "-1002269762641"            #group id dalo
+CHANNEL_USERNAME = "https://t.me/+z1AqFes1zi5mODg1"         #channel username 
 
 # Default cooldown and attack limits
 COOLDOWN_TIME = 10  # Cooldown in seconds
@@ -97,11 +97,11 @@ def handle_attack(message):
     command = message.text.split()
 
     if message.chat.id != int(GROUP_ID):
-        bot.reply_to(message, f"🚫 𝐘𝐄 𝐁𝐎𝐓 𝐒𝐈𝐑𝐅 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐂𝐇𝐀𝐋𝐄𝐆𝐀 ❌\n🔗 𝐉𝐨𝐢𝐧 𝐍𝐨𝐖: {@LOLOLOLOLOLOL89}")
+        bot.reply_to(message, f"🚫 𝐘𝐄 𝐁𝐎𝐓 𝐒𝐈𝐑𝐅 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐂𝐇𝐀𝐋𝐄𝐆𝐀 ❌\n🔗 𝐉𝐨𝐢𝐧 𝐍𝐨𝐖: {CHANNEL_USERNAME}")
         return
 
     if not is_user_in_channel(user_id):
-        bot.reply_to(message, f"❗ **𝐏𝐀𝐇𝐋𝐄 𝐉𝐎𝐈𝐍 𝐊𝐑𝐎** {@LOLOLOLOLOLOL89} 🔥")
+        bot.reply_to(message, f"❗ **𝐏𝐀𝐇𝐋𝐄 𝐉𝐎𝐈𝐍 𝐊𝐑𝐎** {CHANNEL_USERNAME} 🔥")
         return
 
     if pending_feedback.get(user_id, False):
@@ -151,7 +151,7 @@ def handle_attack(message):
     random_image = random.choice(image_urls)
 
     # Send profile picture and attack start message together
-    bot.send_photo(message.chat.id, profile_pic, caption=f"👤 **User:** @{@LOLOLOLOLOLOL89} 🚀\n"
+    bot.send_photo(message.chat.id, profile_pic, caption=f"👤 **User:** @{user_name} 🚀\n"
                                                         f"💥 **𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃!** 💥\n"
                                                         f"🎯 **𝐓𝐀𝐑𝐆𝐄𝐓:** `{target} : {port}`\n"
                                                         f"⏳ **𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍:** {time_duration}𝙨\n"
@@ -278,7 +278,7 @@ def handle_screenshot(message):
         user_status = bot.get_chat_member(CHANNEL_USERNAME, user_id).status
         if user_status not in ['member', 'administrator', 'creator']:
             bot.reply_to(message, f"❌ **𝐘𝐨𝐮 𝐌𝐔𝐒𝐓 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐈𝐑𝐒𝐓!**\n"
-                                  f"🔗 **𝐉𝐨𝐢𝐧 𝐇𝐞𝐫𝐞:** [Click Here]{@LOLOLOLOLOLOL89}")
+                                  f"🔗 **𝐉𝐨𝐢𝐧 𝐇𝐞𝐫𝐞:** [Click Here]{CHANNEL_USERNAME}")
             return  
     except Exception as e:
         bot.reply_to(message, "❌ **𝐂𝐨𝐮𝐥𝐝 𝐍𝐨𝐭 𝐕𝐞𝐫𝐢𝐟𝐲! 𝐌𝐚𝐤𝐞 𝐒𝐮𝐫𝐞 𝐓𝐡𝐞 𝐁𝐨𝐭 𝐈𝐬 𝐀𝐝𝐦𝐢𝐧 𝐈𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥.**")
