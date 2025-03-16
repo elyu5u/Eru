@@ -16,7 +16,7 @@ admin_id = ["7471974865"]     #admin id dalo
 
 # Group and channel details
 GROUP_ID = "-1002269762641"            #group id dalo
-CHANNEL_USERNAME = "https://t.me/+z1AqFes1zi5mODg1"         #channel username 
+CHANNEL_USERNAME = "https://t.me/googlepaynshjsk"         #channel username 
 
 # Default cooldown and attack limits
 COOLDOWN_TIME = 10  # Cooldown in seconds
@@ -311,7 +311,7 @@ def welcome_start(message):
 ⚡ 𝐁𝐄 𝐓𝐇𝐄 𝐊𝐈𝐍𝐆, 𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐄 𝐓𝐇𝐄 𝐖𝐄𝐁!  
 
 🔗 **𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭, 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰:**  
-👉 [𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙂𝙧𝙤𝙪𝙥](https://t.me/+z1AqFes1zi5mODg1) 🚀🔥"""
+👉 [𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙂𝙧𝙤𝙪𝙥](https://t.me/googlepaynshjsk) 🚀🔥"""
     
     bot.reply_to(message, response, parse_mode="Markdown")
 # Function to reset daily limits automatically
